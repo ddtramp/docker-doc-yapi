@@ -146,6 +146,26 @@ ENTRYPOINT ["node"]
 `docker build -t yapi .`
 
 
+## ISSUE
+
+1. cross-request 插件无法安装
+
+    1. 选择本地下载
+    
+    2. 解压 出 *.crx 文件
+
+    3. 解压 *.crx 文件
+
+    4. chrome 扩展程序 -> 加载已解压的扩展程序
+
+    5. 选择 step 3 解压出来的文件夹
+
+    6. 完成
+
+在线 store 无法安装。
+
+直接安装 `.crx` 无法使用。
+
 ## REFERENCES
 
 [https://github.com/YMFE/yapi](https://github.com/YMFE/yapi)
