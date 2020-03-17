@@ -43,11 +43,40 @@ docker run -it --rm \
   run install-server
 
 ```
+
 初始化管理员账号成功,账号名："w********o001@gmail.com"，密码："a**1********9"
 
 自定义配置文件挂载到目录 /api/config.json，官方自定义配置文件 -> [传送门](https://github.com/YMFE/yapi/blob/master/config_example.json)
 
-4. 启动 Yapi 服务
+
+config.json
+
+```json
+{
+  "port": "3000",
+  "adminAccount": "admin@admin.com",
+  "db": {
+    "servername": "127.0.0.1",
+    "DATABASE": "yapi",
+    "port": 27017,
+    "user": "test1",
+    "pass": "test1",
+    "authSource": ""
+  },
+  "mail": {
+    "enable": true,
+    "host": "smtp.163.com",
+    "port": 465,
+    "from": "***@163.com",
+    "auth": {
+      "user": "***@163.com",
+      "pass": "*****"
+    }
+  }
+}
+```
+
+3. 启动 Yapi 服务
 
 ```
 docker run -d \
@@ -61,9 +90,7 @@ docker run -d \
   server/app.js
 ```
 
-
-
-5. 使用 Yapi
+4. 使用 Yapi
 
 访问 http://localhost:3000 登录账号 admin@admin.com，密码 ymfe.org
 
@@ -72,7 +99,7 @@ docker run -d \
 [Yapi 版本更新记录](https://github.com/YMFE/yapi/blob/master/CHANGELOG.md)
 
 
-4. 其他相关操作
+5. 其他相关操作
 
 关闭 yapi
 
