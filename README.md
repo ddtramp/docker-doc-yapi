@@ -43,7 +43,7 @@ docker run -it --rm \
   run install-server
 
 ```
-初始化管理员账号成功,账号名："wangxichao001@gmail.com"，密码："ymfe.org"
+初始化管理员账号成功,账号名："w********o001@gmail.com"，密码："a**1********9"
 
 自定义配置文件挂载到目录 /api/config.json，官方自定义配置文件 -> [传送门](https://github.com/YMFE/yapi/blob/master/config_example.json)
 
